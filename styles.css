@@ -48,14 +48,10 @@
 
 
   @media screen and (max-width: 1280px) {
-    .bg-overlay div, #intro div {
-        position: static;
-        display: block;
-        padding: 10px 20px;
-        width: fit-content;
+    body {
+      width: 100%;
     }
-    ol{display: block;}
-    .bg-overlay, #intro {
+    #intro {
         height: fit-content;
     }
     /*.animalinfo{background-size: contain;}*/
@@ -64,7 +60,7 @@
     #dogs img {display:block; margin-left: auto; margin-right: auto;}
     /*#cats, #dogs, #ducks, #meerkats, #narwhal, #puffin, #hognose, #wasp, #platypus, #moth, #frog, #waterbear {background-image: none;}*/
     h2 {font-size:24px;}
-    nav{display:none;}
+    /*nav{display:none;}*/
 }
 
   html {
@@ -156,9 +152,16 @@ h1 {
   padding: 40px 120px;
   font-size: 20px;
 }
-.attels {
+.attels{
   width: 50%;
+}
+.attels img {
+  max-height: 300px;
 }
 .thoughts {
   left: 55%;
+}
+
+.flexdisplay{
+  display: flex;
 }
