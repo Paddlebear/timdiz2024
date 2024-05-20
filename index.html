@@ -6,40 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> 
     <title>Mans ceļš uz LU - AG</title>
 </head>
 
 <body>
-    <nav id="top-menu" class="menu">
-        <ul>
-            <li class="upper-menu" id="start"><a href="#">CEĻŠ</a>
-            <li class="upper-menu"><a href="#transport">Transports</a>
-                <ul class="sub-menu">
-                    <li><a href="#auto41">41.autobuss</a></li>
-                    <li><a href="#auto37">37.autobuss</a></li>
-                    <li><a href="#tram1">1.tramvajs</a></li>
-                    <li><a href="#othertransport">Citas iespējas</a></li>
-                </ul>
-            </li>
-            <li class="upper-menu"><a href="#objects">Apskates objekti</a>
-                <ul class="sub-menu">
-                    <li><a href="#botdarzs">Botāniskais dārzs</a></li>
-                    <li><a href="#uzvparks">Uzvaras parks</a></li>
-                    <li><a href="#nacbib">Nacionālā bibliotēka</a></li>
-                    <li><a href="#tilti">Daugavas tilti</a></li>
-                    <li><a href="#esplanade">Esplanāde</a></li>
-                    <li><a href="#piemineklis">Brīvības piemineklis</a></li>
-                </ul>
-            </li>
-            <li class="upper-menu"><a href="#luplaces">Vietas LU</a>
-                <ul class="sub-menu">
-                    <li><a href="#ludf">Raiņa bulvāris</a></li>
-                    <li><a href="#lubvef">Aspazijas bulvāris</a></li>
-                    <li><a href="#akadcentrs">Dabas māja Torņakalnā</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    <header class="header">
+        <div class="mobileHeader">
+            <a href="#" class="logo">CEĻŠ</a>
+            <button onclick={openMenu()} class="hamburger">Menu</button>
+        </div>
+        <nav class="menu" id="menu">
+            <ul class="list">
+                <li class="listItem"><a href="#transport">Transports</a>
+                    <ul class="sub-menu">
+                        <li><a href="#auto41">41.autobuss</a></li>
+                        <li><a href="#auto37">37.autobuss</a></li>
+                        <li><a href="#tram1">1.tramvajs</a></li>
+                        <li><a href="#othertransport">Citas iespējas</a></li>
+                    </ul>
+                </li>
+                <li class="listItem"><a href="#objects">Apskates objekti</a>
+                    <ul class="sub-menu">
+                        <li><a href="#botdarzs">Botāniskais dārzs</a></li>
+                        <li><a href="#uzvparks">Uzvaras parks</a></li>
+                        <li><a href="#nacbib">Nacionālā bibliotēka</a></li>
+                        <li><a href="#tilti">Daugavas tilti</a></li>
+                        <li><a href="#esplanade">Esplanāde</a></li>
+                        <li><a href="#piemineklis">Brīvības piemineklis</a></li>
+                    </ul>
+                </li>
+                <li class="listItem"><a href="#luplaces">Vietas LU</a>
+                    <ul class="sub-menu">
+                        <li><a href="#ludf">Raiņa bulvāris</a></li>
+                        <li><a href="#lubvef">Aspazijas bulvāris</a></li>
+                        <li><a href="#akadcentrs">Dabas māja Torņakalnā</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section id="intro">
         <h1>Mans ceļš uz Latvijas Universitāti</h1>
         <div id="introdiv">

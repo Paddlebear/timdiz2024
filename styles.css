@@ -47,20 +47,26 @@
   }
 
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 899px) {
     body {
       width: 100%;
     }
     #intro {
         height: fit-content;
     }
-    /*.animalinfo{background-size: contain;}*/
-    .speciestext{font-size: 16px;}
-    .thoughts {font-size: 16px;}
-    #dogs img {display:block; margin-left: auto; margin-right: auto;}
-    /*#cats, #dogs, #ducks, #meerkats, #narwhal, #puffin, #hognose, #wasp, #platypus, #moth, #frog, #waterbear {background-image: none;}*/
+    .section-desc {
+      padding: 0;
+    }
     h2 {font-size:24px;}
-    /*nav{display:none;}*/
+    .menu {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+  .section-desc {
+    padding: 40px 120px;
+  }
 }
 
   html {
@@ -94,6 +100,7 @@
     padding: 15px 30px 10px 0px;
     text-align: center;
 }
+/* FIX THIS PLZ 
 #top-menu ul .upper-menu .sub-menu {
     display: none;
     position: absolute;
@@ -103,7 +110,91 @@
 #top-menu ul .upper-menu:hover .sub-menu {
     display: block;
 }
+*/
 
+body {
+  width: 90%;
+  height: 800px;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: #583760;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+
+.logo {
+  color: white;
+}
+
+.list {
+  display: grid;
+  grid-auto-flow: column;
+  list-style-type: none;
+  column-gap: 40px;
+}
+
+.listItem {
+  width: min-content;
+  white-space: nowrap;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (min-width: 801px) {
+  .menu {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .mobileHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .list {
+    grid-auto-flow: row;
+    list-style-type: none;
+    row-gap: 40px;
+    column-gap: 0;
+    justify-items: center;
+  }
+}
+
+/* HERE ENDS DUMBFUCKERY */
 #introdiv {
   padding: 0px 120px 40px;
 }
@@ -133,16 +224,16 @@ h1 {
   margin: 0;
 }
 .section-desc h2{
-  width: max-content;
+  width: 100%;
   padding: 5px 10px;
   margin: auto;
+  text-align: center;
 }
 .section-desc h2 {
   color: black;
 }
 .section-desc {
   color: black;
-  padding: 40px 120px;
 }
 .section-desc p {
   text-align: center;
