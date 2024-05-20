@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script> 
     <title>Mans ceļš uz LU - AG</title>
 </head>
-
 <body>
-    <header class="header">
+    <div>
+    <!--
+    <header class="header" id="header">
         <div class="mobileHeader">
             <a href="#" class="logo">CEĻŠ</a>
             <button onclick={openMenu()} class="hamburger">Menu</button>
@@ -46,196 +46,254 @@
             </ul>
         </nav>
     </header>
-    <section id="intro">
-        <h1>Mans ceļš uz Latvijas Universitāti</h1>
-        <div id="introdiv">
-            <p>Šī lapa ir ieskats manā fiziskajā ceļā uz Latvijas Universitāti.</p>
+-->
+</div>
+<header class="header" id="header">
+    <div class="mobileHeader">
+        <a href="#" class="logo">CEĻŠ</a>
+        <button onclick={openMenu()} class="hamburger">Menu</button>
+    </div>
+    <nav class="menu" id="menu">
+        <ul class="list">
+            <li>
+                <div class="listItem">
+                    <a href="#transport">Transports</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#auto41">41.autobuss</a></li>
+                            <li><a href="#auto37">37.autobuss</a></li>
+                            <li><a href="#tram1">1.tramvajs</a></li>
+                            <li><a href="#othertransport">Citas iespējas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listItem">
+                    <a href="#objects">Apskates objekti</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#botdarzs">Botāniskais dārzs</a></li>
+                            <li><a href="#uzvparks">Uzvaras parks</a></li>
+                            <li><a href="#nacbib">Nacionālā bibliotēka</a></li>
+                            <li><a href="#tilti">Daugavas tilti</a></li>
+                            <li><a href="#esplanade">Esplanāde</a></li>
+                            <li><a href="#piemineklis">Brīvības piemineklis</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listItem">
+                    <a href="#luplaces">Vietas LU</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="#ludf">Raiņa bulvāris</a></li>
+                            <li><a href="#lubvef">Aspazijas bulvāris</a></li>
+                            <li><a href="#akadcentrs">Dabas māja Torņakalnā</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="dark">
+                    <a href="#">darkmode</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="intro">
+    <h1>Mans ceļš uz Latvijas Universitāti</h1>
+    <div id="introdiv">
+        <p>Šī lapa ir ieskats manā fiziskajā ceļā uz Latvijas Universitāti.</p>
+    </div>
+</section>
+<section class="section-desc" id="transport">
+    <h2>Transports uz centru un atpakaļ</h2>
+    <p>lorem ipsum dolor sit amet....</p>
+    <section class="information" id="auto41">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="section-desc" id="transport">
-        <h2>Transports uz centru un atpakaļ</h2>
-        <p>lorem ipsum dolor sit amet....</p>
-        <section class="information" id="auto41">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
+    <section class="information" id="auto37">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
                 </div>
             </div>
-        </section>
-        <section class="information" id="auto37">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="information" id="tram1">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="information" id="othertransport">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </section>
-    <section class="section-desc" id="objects">
-        <h2>Apskates objekti pa ceļam</h2>
-        <p>lorem ipsum dolor sit amet....</p>
-        <section class="information" id="botdarzs">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
+    <section class="information" id="tram1">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+                <div class="thoughts">
+                    <p>domas</p>
                 </div>
             </div>
-        </section>
-        <section class="information" id="uzvparks">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="information" id="nacbib">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="information" id="tilti">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="information" id="esplanade">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="information" id="piemineklis">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </section>
-    <section class="section-desc" id="luplaces">
-        <h2>Gala ceļš uz turieni, kur vajag</h2>
-        <p>lorem ipsum dolor sit amet....</p>
-        <section class="information" id="ludf">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
+    <section class="information" id="othertransport">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
                 </div>
             </div>
-        </section>
-        <section class="information" id="lubvef">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="information" id="akadcentrs">
-            <div class="bg-section">
-                <h2>LIELAIS VIRSRAKSTS</h2>
-                <div class="flexdisplay">
-                    <div class="attels">
-                        <img src="assets/filler2.jpg" alt="help">
-                    </div>
-                    <div class="thoughts">
-                        <p>domas</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </section>
-    <section id="footer">
-        <h4>Agnese Griķe, ag21201</h4>
+</section>
+<section class="section-desc" id="objects">
+    <h2>Apskates objekti pa ceļam</h2>
+    <p>lorem ipsum dolor sit amet....</p>
+    <section class="information" id="botdarzs">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+            </div>
+        </div>
     </section>
+    <section class="information" id="uzvparks">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information" id="nacbib">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information" id="tilti">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information" id="esplanade">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information" id="piemineklis">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="section-desc" id="luplaces">
+    <h2>Gala ceļš uz turieni, kur vajag</h2>
+    <p>lorem ipsum dolor sit amet....</p>
+    <section class="information" id="ludf">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information" id="lubvef">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="information" id="akadcentrs">
+        <div class="bg-section">
+            <h2>LIELAIS VIRSRAKSTS</h2>
+            <div class="flexdisplay">
+                <div class="attels">
+                    <img src="assets/filler2.jpg" alt="help">
+                </div>
+                <div class="thoughts">
+                    <p>domas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section id="footer">
+    <h4>Agnese Griķe, ag21201</h4>
+</section>
 </body>
+<script src="script.js"></script>
 
 </html>
