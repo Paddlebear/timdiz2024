@@ -263,7 +263,14 @@ nav a:hover {
     width:calc(100% - 48px);
   }
   .flexdisplay {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .attels {
+    order: 1;
+  }
+  .thoughts {
+    order:2;
   }
 }
 
@@ -321,12 +328,12 @@ h1 {
 
 .attels,
 .thoughts {
-  padding: 40px 120px;
+  padding: 40px 40px;
   font-size: 20px;
 }
 
 .attels img {
-  max-height: 300px;
+  max-height: 400px;
   margin: auto;
 }
 
