@@ -144,6 +144,9 @@ h6 {
   .thoughts {
     width: 50%;
   }
+  nav {
+    display:block;
+  }
 
 }
 
@@ -189,6 +192,9 @@ li {
   padding: 20px 60px;
 }
 
+.mobileHeader a {
+  font-size: 120%;
+}
 
 .logo {
   color: white;
@@ -201,7 +207,7 @@ li {
   column-gap: 40px;
 }
 
-nav a {
+header a {
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -274,9 +280,9 @@ nav a:hover {
   }
 }
 
-/* HERE ENDS DUMBFUCKERY */
+
 #introdiv {
-  padding: 0px 120px 40px;
+  padding: 0px 60px 40px;
 }
 
 #introdiv p {
