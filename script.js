@@ -29,3 +29,7 @@ function openMenu() {
         open = true;
     }
 }
+
+function darkMode() {
+    document.body.classList.toggle('dark-mode');
+}
