@@ -68,9 +68,11 @@ h6 {
 #__next {
   isolation: isolate;
 }
+html {
+  scroll-padding-top: 75px;
+}
 
-
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 914px) {
   body {
     width: 100%;
   }
@@ -86,17 +88,52 @@ h6 {
   h2 {
     font-size: 24px;
   }
+
   .attels {
     width: 100%;
+    padding: 40px 40px;
   }
+
   .thoughts {
     width: 100%;
+    padding: 40px 40px;
+  }
+
+  .triangleleft,
+  .triangleblock,
+  .triangleright {
+    display: none;
   }
 }
 
-@media screen and (min-width: 900px) {
+.triangleleft,
+.triangleright,
+.triangleblock {
+  width: 20%;
+  z-index: inherit;
+}
+
+.triangleleft {
+  clip-path: polygon(0 10%, 100% 50%, 0 90%);
+  background-color: var(--trianglecolor);
+}
+
+.triangleright {
+  clip-path: polygon(100% 10%, 0 50%, 100% 90%);
+  background-color: var(--trianglecolor);
+}
+
+.sub-menu {
+  letter-spacing: 0.1vw;
+}
+
+
+
+
+@media screen and (min-width: 915px) {
   .section-desc {
-    padding: 40px 120px;
+    /*padding: 40px 120px;*/
+    padding: 40px 0px;
   }
 
   .listItem .sub-menu {
@@ -108,44 +145,57 @@ h6 {
 
   .listItem {
     text-align: center;
-    display:flex;
+    display: flex;
     justify-content: center;
   }
+
   .menu .list {
     padding-inline-start: 0;
   }
 
   .sub-menu {
     padding-inline-start: 0px;
-    margin-top:30px;
-    border:15px solid rgba(32, 32, 32, 1);
+    margin-top: 30px;
+    border: 15px solid rgba(32, 32, 32, 1);
     text-align: center;
     align-items: center;
   }
- .sub-menu ul{
-  width:100%;
-    list-style-type:none;
+
+  .sub-menu ul {
+    width: 100%;
+    list-style-type: none;
     text-align: center;
     align-items: center;
-    display:inline;
+    display: inline;
   }
+
   .sub-menu li {
     text-align: center;
   }
+
   .mobileHeader {
-    width:20%;
+    width: 20%;
   }
+
   .flexdisplay {
     display: flex;
   }
+
   .attels {
     width: 50%;
+    padding: 40px 40px;
   }
+
   .thoughts {
     width: 50%;
   }
+
+  header {
+    letter-spacing: 0.125vw;
+  }
+
   nav {
-    display:block;
+    display: block;
   }
 
 }
@@ -156,7 +206,7 @@ html {
 
 .menu {
   width: 100%;
-  font-size: 120%;
+  font-size:135%;
   z-index: 100;
 }
 
@@ -190,14 +240,16 @@ li {
   background: var(--headercolor);
   align-items: center;
   padding: 20px 60px;
+  z-index: 100;
 }
 
 .mobileHeader a {
-  font-size: 120%;
+  font-size: 135%;
 }
 
-.logo {
-  color: white;
+.logo-img {
+  height: 35px;
+  width: auto;
 }
 
 .list {
@@ -209,7 +261,7 @@ li {
 
 header a {
   color: white;
-  font-weight: bold;
+  font-weight: 550;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -222,8 +274,20 @@ nav a:hover {
   display: none;
 }
 
+#intro {
+  background-image: url("assets/intro.jpg");
+  background-size: cover;
+  color: #e6ebff
+}
 
-@media screen and (max-width: 899px) {
+.bg-overlay {
+  background-color: rgba(32, 32, 40, 0.7);
+  height: auto;
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 914px) {
 
   .header {
     flex-direction: column;
@@ -238,6 +302,8 @@ nav a:hover {
 
   .hamburger {
     display: block;
+    height: 35px;
+    width:auto;
   }
 
   .menu {
@@ -262,21 +328,26 @@ nav a:hover {
     display: inline-block;
     text-align: center;
   }
+
   .menu ul {
     padding-inline-start: 0;
   }
+
   .sticky {
-    width:calc(100% - 48px);
+    width: calc(100% - 48px);
   }
+
   .flexdisplay {
     display: flex;
     flex-direction: column;
   }
+
   .attels {
     order: 1;
   }
+
   .thoughts {
-    order:2;
+    order: 2;
   }
 }
 
@@ -324,7 +395,10 @@ h1 {
   font-size: 20px;
 }
 
-.attels,
+.attels {
+  font-size: 20px;
+}
+
 .thoughts {
   padding: 40px 40px;
   font-size: 20px;
@@ -338,35 +412,42 @@ h1 {
 
 .sticky {
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
 }
-
-
 
 .darkmode {
   text-align: right;
   width: 10%;
 }
+
 .dark {
   text-align: right;
-  align-items:end;
+  align-items: end;
+}
+
+.dark img {
+  height: 35px;
+  width: auto;
+  float:right;
 }
 
 body {
   background-color: var(--backgroundcolor);
-  color:var(--textcolor);
+  color: var(--textcolor);
 }
 
 
 :root {
-  --backgroundcolor: #f2e6d9;
-  --textcolor: #17171c;
+  --backgroundcolor: #e6ebff;
+  --textcolor: #00051a;
   --headercolor: #1e4197;
+  --trianglecolor: #95abea;
 }
 
 body.dark-mode {
-  --backgroundcolor: #17171c;
-  --textcolor: #f2e6d9;
+  --backgroundcolor: #00051a;
+  --textcolor: #e6ebff;
   --headercolor: #163175;
+  --trianglecolor: #152c6a;
 }

@@ -31,5 +31,11 @@ function openMenu() {
 }
 
 function darkMode() {
+    var img = document.getElementById("darkmode");
+            if (img.src.includes("switchdark.svg")) {
+                img.src = "./assets/switchlight.svg";
+            } else {
+                img.src = "./assets/switchdark.svg";
+            }
     document.body.classList.toggle('dark-mode');
 }
