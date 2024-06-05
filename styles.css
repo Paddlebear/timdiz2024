@@ -91,12 +91,12 @@ html {
 
   .attels {
     width: 100%;
-    padding: 40px 40px;
+    padding: 40px 40px 0 40px;
   }
 
   .thoughts {
     width: 100%;
-    padding: 40px 40px;
+    padding: 40px 5vw;
   }
 
   .triangleleft,
@@ -183,11 +183,12 @@ html {
 
   .attels {
     width: 50%;
-    padding: 40px 40px;
+    padding: 20px 20px;
   }
 
   .thoughts {
     width: 50%;
+    padding: 20px 20px;
   }
 
   header {
@@ -353,10 +354,16 @@ nav a:hover {
 
 .desc h2 {
   width: 100%;
-  padding: 25px 10px;
+  padding: 35px 10px 25px 10px;
   margin: auto;
   text-align: center;
+  font-size: 28px;
 }
+
+.desc p {
+  padding: 0 10vw;
+}
+
 
 #introdiv {
   padding: 0px 60px 40px;
@@ -370,7 +377,7 @@ nav a:hover {
 h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 36px;
   text-decoration: overline;
   margin: 0;
   padding-top: 120px;
@@ -397,7 +404,17 @@ h1 {
   text-align: center;
 }
 
+.information {
+  margin-top: 45px;
+  margin-bottom:30px;
+}
+
 .section-desc p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.desc p {
   text-align: center;
   font-size: 20px;
 }
@@ -405,14 +422,8 @@ h1 {
 .attels {
   font-size: 20px;
 }
-
-.thoughts {
-  padding: 40px 40px;
-  font-size: 20px;
-}
-
 .attels img {
-  max-height: 400px;
+  max-height: 500px;
   margin: auto;
 }
 
@@ -447,20 +458,32 @@ body {
 .desc {
   background: var(--backgroundcolor);
   background: linear-gradient(0deg, var(--backgroundcolor) 50%, var(--gradientcolor) 100%);
-  height: 130px;
-  margin-bottom: 20px; 
+  height:fit-content;
+  margin-bottom: 60px; 
 
+}
+
+.information h2 {
+  margin-top: 20px;
 }
 
 .line {
   height: 0.5vh;
   background-color: var(--textcolor);
-  margin: 0 42vw;
+  margin:0 42vw;
 }
 
 .bigline {
   height: 0.5vh;
   background-color: var(--linecolor);
+}
+
+body h1 {
+  letter-spacing: 0.15vw;
+}
+
+body h2 {
+  letter-spacing: 0.05vw;
 }
 
 :root {
