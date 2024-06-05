@@ -72,7 +72,7 @@ html {
   scroll-padding-top: 75px;
 }
 
-@media screen and (max-width: 914px) {
+@media screen and (max-width: 999px) {
   body {
     width: 100%;
   }
@@ -130,7 +130,7 @@ html {
 
 
 
-@media screen and (min-width: 915px) {
+@media screen and (min-width: 1000px) {
   .section-desc {
     /*padding: 40px 120px;*/
     padding: 0px 0px;
@@ -288,7 +288,7 @@ nav a:hover {
 }
 
 
-@media screen and (max-width: 914px) {
+@media screen and (max-width: 999px) {
 
   .header {
     flex-direction: column;
@@ -411,7 +411,7 @@ h1 {
 
 .section-desc p {
   text-align: justify;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .desc p {
